@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-us">
+{% include head.html %}
+
+<body>
+  <div class="page-wrap">
+    {% include sidebar.html %}
+
+    <div class="content">
+      <div class="bar">
+
+      </div>
+      <div class="main">
+        <h1>{{ page.title }}</h1>
+        {{ content }}
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
