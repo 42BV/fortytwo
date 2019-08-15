@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-us">
+{% include head.html %}
+
+<body>
+    <div class="page-wrap">
+        {% include sidebar.html %}
+        <div class="content">
+            <div class="bar">
+
+            </div>
+            <div class="main">
+                <h1>{{ page.title }}</h1>
+                {{ content }}
+                <div class="steps">
+                    {% if page.previous %}
+                    <a class="step step--previous" href="{{ page.previous.url | relative_url }}">
+                        <div class="step__text">
+                            <span class="text-muted">Previous</span>
+                            <span class="step__text__name">{{ page.previous.name }}</span>
+                        </div>
+                        <span class="step__icon">
+                            <i class="step__arrow"></i>
+                        </span>
+                    </a>
+                    {% endif %}
+                    {% if page.next %}
+                    <a class="step step--next" href="{{ page.next.url | relative_url }}">
+                        <div class="step__text">
+                            <span class="text-muted">Next</span>
+                            <span class="step__text__name">{{ page.next.name }}</span>
+                        </div>
+                        <span class="step__icon">
+                            <i class="step__arrow"></i>
+                        </span>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

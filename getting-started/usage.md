@@ -1,9 +1,15 @@
 ---
-layout: default
+layout: guide
 title: Usage
 nav_order: 6
 permalink: /usage
 parent: Getting started
+previous:
+  url: test
+  name: Test
+next:
+  url: hoi
+  name: Usage
 ---
 
 This library provides access to enums through the React context API. This supports both functional and class component invocation.
@@ -11,14 +17,14 @@ This library provides access to enums through the React context API. This suppor
 ### Functional component
 
 ```jsx
-import { useEnum, useEnums } from '@42.nl/react-spring-enums';
+import { useEnum, useEnums } from '@42.nl/react-spring-enums'
 
 const RoleLister = () => {
-  const myEnum = useEnum('userRole'); // Fetch single enum by key
-  const { enums } = useEnums(); // Fetch entire collection of enums
+  const myEnum = useEnum('userRole') // Fetch single enum by key
+  const { enums } = useEnums() // Fetch entire collection of enums
 
-  return myEnum.map(role => <span key={role}>{role}</span>);
-};
+  return myEnum.map(role => <span key={role}>{role}</span>)
+}
 ```
 
 ### Class component
