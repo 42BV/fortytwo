@@ -144,6 +144,26 @@ nav {
  * Content
  */
 .content {
+  .bar {
+    display: flex;
+    height: $logo_height;
+    border-bottom: 1px solid $sidebar_border;
+
+    .bar__icons {
+      flex: 1 0 0;
+      height: 100%;
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      flex-direction: row-reverse;
+
+      .icons__icon {
+        box-sizing: border-box;
+        padding: 0px 50px 0px 25px;
+      }
+    }
+  }
+
   width: 100%;
   margin-left: $sidebar_width;
   overflow-y: scroll;
@@ -164,7 +184,7 @@ nav {
 .steps {
   width: 100%;
   display: flex;
-  margin: 20px 0px;
+  margin: 50px 0 100px;
 
   .step {
     display: flex;
@@ -249,14 +269,6 @@ nav {
 .text-muted {
   font-size: 13px;
   color: rgba(0, 0, 0, 0.5);
-}
-
-/*
- * Bar
- */
-.bar {
-  height: $logo_height;
-  border-bottom: 1px solid $sidebar_border;
 }
 
 blockquote {
