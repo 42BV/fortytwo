@@ -163,7 +163,11 @@ nav {
 
       .icons__icon {
         box-sizing: border-box;
-        padding: 0px 50px 0px 25px;
+        padding-left: 25px;
+
+        &:first-child {
+          padding: 0 50px 0 25px;
+        }
       }
     }
   }

@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Guide page layout (see [Getting Started](/getting-started) for an example)
 - Ability to add links to the content bar through `links` property within your `_config.yml`.
 - Additional spacing to the steps in the guide layout.
+- Favicon and static logo.
 
 ### Changed
 
