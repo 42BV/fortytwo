@@ -2,25 +2,25 @@
  * Body, html
  */
 $default-font: 'Open Sans', sans-serif;
-$header-font: -apple-system,BlinkMacSystemFont,"helvetica neue",helvetica,roboto,noto,"segoe ui",arial,sans-serif;
+$header-font: -apple-system, BlinkMacSystemFont, 'helvetica neue', helvetica,
+  roboto, noto, 'segoe ui', arial, sans-serif;
 
 /*
  * Sidebar
  */
 $sidebar_width: 385px;
 $sidebar_background: #f2f6ff;
-$sidebar_color: rgba(0,0,0, 0.7); 
+$sidebar_color: rgba(0, 0, 0, 0.7);
 $sidebar_border: rgba(0, 0, 0, 0.1); // Border to the right
 
-$active_link_color: #0265B2;
-$active_parent_color: rgba(#0265B2, 0.2);
+$active_link_color: #0265b2;
+$active_parent_color: rgba(#0265b2, 0.2);
 
 /*
  * Logo
  */
 $logo_width: 25rem;
 $logo_height: 90px;
-$logo_padding: 15px 0;
 $logo_border: rgba(0, 0, 0, 0.1); // Border underneath
 
 $logo_img_width: 60px;
@@ -40,10 +40,10 @@ $site_description_color: rgba(0, 0, 0, 0.5);
  */
 $navigation_width: 285px; // width of sidebar
 $navigation_margin: 40px 0 0 auto;
-$navigation_color: rgba(0,0,0, 0.7);
+$navigation_color: rgba(0, 0, 0, 0.7);
 $navigation_font_size: 14px;
 
 $navigation_submenu_default_display: none; // hide submenus
-$navigation_submenu_color: rgba(0,0,0, 0.5);
+$navigation_submenu_color: rgba(0, 0, 0, 0.5);
 $navigation_submenu_font_size: 14px;
 $navigation_submenu_indent: 15px; // margin-left of submenus
